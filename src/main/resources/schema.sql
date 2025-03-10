@@ -37,8 +37,7 @@ CREATE TABLE "SupplierOrderItems" (
                                       "item_id" int PRIMARY KEY,
                                       "order_id" int NOT NULL,
                                       "product_id" int NOT NULL,
-                                      "quantity" int NOT NULL,
-                                      "unit_price" decimal(10,2) NOT NULL
+                                      "quantity" int NOT NULL
 );
 
 CREATE TABLE "CustomerOrders" (
@@ -54,8 +53,7 @@ CREATE TABLE "CustomerOrderItems" (
                                       "item_id" int PRIMARY KEY,
                                       "order_id" int NOT NULL,
                                       "product_id" int NOT NULL,
-                                      "quantity" int NOT NULL,
-                                      "unit_price" decimal(10,2) NOT NULL
+                                      "quantity" int NOT NULL
 );
 
 ALTER TABLE "Products" ADD FOREIGN KEY ("supplier_id") REFERENCES "Suppliers" ("supplier_id");

@@ -22,9 +22,6 @@ public class CustomerOrderItem {
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
 
-    @Column(name = "unit_price", nullable = false, precision = 10, scale = 2)
-    private BigDecimal unitPrice;
-
     public Integer getId() {
         return id;
     }
@@ -55,14 +52,6 @@ public class CustomerOrderItem {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
-    }
-
-    public BigDecimal getUnitPrice() {
-        return unitPrice;
-    }
-
-    public void setUnitPrice(BigDecimal unitPrice) {
-        this.unitPrice = unitPrice;
     }
 
 }
