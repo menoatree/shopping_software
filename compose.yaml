@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=shop_db'
+      - 'POSTGRES_PASSWORD=Eisenbahn123'
+      - 'POSTGRES_USER=db_admin'
+    ports:
+      - '5432:5432'
