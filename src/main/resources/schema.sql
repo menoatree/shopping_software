@@ -1,7 +1,7 @@
 CREATE TABLE "Suppliers" (
                              "supplier_id" integer PRIMARY KEY,
                              "name" varchar(100) NOT NULL,
-                             "adress" varchar(200) NOT NULL,
+                             "address" varchar(200) NOT NULL,
                              "phone" varchar(20),
                              "email" varchar(100),
                              "contact_person" varchar(100)
@@ -19,7 +19,7 @@ CREATE TABLE "Products" (
 CREATE TABLE "Customers" (
                              "customer_id" int PRIMARY KEY,
                              "name" varchar(100) NOT NULL,
-                             "adress" varchar(200) NOT NULL,
+                             "address" varchar(200) NOT NULL,
                              "phone" varchar(20),
                              "email" varchar(100)
 );
