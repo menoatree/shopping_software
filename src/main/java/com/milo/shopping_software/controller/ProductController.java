@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/Product")
+@RequestMapping("/api/Products")
 public class ProductController {
 
     @Autowired
@@ -19,7 +19,7 @@ public class ProductController {
         return productRepository.save(product);
     }
 
-
+    @CrossOrigin
     @GetMapping
     public List<Product> getAll() {
         return productRepository.findAll();
