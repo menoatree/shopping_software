@@ -15,7 +15,7 @@ public class CustomerOrderController {
 
     @Autowired
     CustomerOrderRepository customerOrderRepository;
-
+    @CrossOrigin
     @PostMapping
     public CustomerOrder create(@RequestBody CustomerOrder customerOrder) {
         return customerOrderRepository.save(customerOrder);

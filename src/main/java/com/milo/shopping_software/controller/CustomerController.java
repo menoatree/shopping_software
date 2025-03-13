@@ -14,7 +14,7 @@ public class CustomerController {
 
     @Autowired
      CustomerRepository customerRepository;
-
+    @CrossOrigin
     @PostMapping
     public String create(@RequestBody Customer customer) {
         customerRepository.save(customer);
