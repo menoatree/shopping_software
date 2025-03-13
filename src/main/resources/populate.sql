@@ -1,5 +1,5 @@
 -- Insert data into Suppliers table
-INSERT INTO Suppliers (supplier_id, name, address, phone, email, contact_person)
+INSERT INTO suppliers (supplier_id, name, address, phone, email, contact_person)
 VALUES
     (1, 'Großhandel GmbH', 'Bruckerstraße 4 38126 Braunschweig', '0531-1044101', 'Irene.Schneider@grosshandel.de', 'Irene Schneider'),
     (2, 'Lifer & Söhne', 'Haupstraße 43, 89073 Ulm', '0731-599821', 'sales.lieferundsoehne@gmx.com', 'Rudolph Lifer'),
